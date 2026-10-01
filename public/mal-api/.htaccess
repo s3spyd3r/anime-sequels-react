@@ -1,0 +1,4 @@
+# Route /mal-api/* into the PHP proxy (Plesk/Apache shared hosting).
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [L,QSA]
